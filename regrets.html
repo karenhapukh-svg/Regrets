@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat Ucapan Terima Kasih</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    overflow-x: hidden;
+}
+
+/* Container utama */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: #f8b500;
+}
+
+/* Foto */
+.photo-frame {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.photo-frame img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 5px solid #f8b500;
+    transition: transform 0.3s ease;
+}
+
+.photo-frame img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Isi surat */
+.content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Penutup */
+.signature {
+    margin-top: 30px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Animasi hiasan */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    transform: rotate(45deg);
+    animation: float 6s infinite;
+    opacity: 0.6;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart::after {
+    left: -10px;
+    top: 0;
+}
+
+/* Posisi random */
+.heart:nth-child(1) { left: 10%; animation-duration: 5s; }
+.heart:nth-child(2) { left: 30%; animation-duration: 7s; }
+.heart:nth-child(3) { left: 50%; animation-duration: 6s; }
+.heart:nth-child(4) { left: 70%; animation-duration: 8s; }
+.heart:nth-child(5) { left: 90%; animation-duration: 5s; }
+
+/* Gerakan naik */
+@keyframes float {
+    0% {
+        bottom: -50px;
+        transform: translateX(0) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        bottom: 100%;
+        transform: translateX(50px) rotate(45deg);
+        opacity: 0;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- Animasi background -->
+<div class="heart"></div>
+<div class="heart"></div>
+<div class="heart"></div>
+<div class="heart"></div>
+<div class="heart"></div>
+
+<div class="container">
+    <h1>Ungkapan Syukur & Terima Kasih</h1>
+
+    <div class="photo-frame">
+        <img src="https://via.placeholder.com/200" alt="Foto Anda">
+    </div>
+
+    <div class="content">
+        <p>
+            Dengan penuh rasa syukur, saya ingin mengucapkan terima kasih yang sebesar-besarnya atas kehadiran dan peran yang begitu berarti dalam kehidupan ini.
+        </p>
+
+        <p>
+            Kehadiran Anda bukan hanya sekadar melengkapi, tetapi juga memberikan warna, makna, serta semangat dalam setiap langkah yang dijalani. Banyak hal yang mungkin tidak terucap, namun tersimpan dalam rasa hormat dan penghargaan yang mendalam.
+        </p>
+
+        <p>
+            Semoga kebaikan, ketulusan, dan segala hal indah yang telah diberikan dapat kembali berlipat ganda. Terima kasih telah menjadi bagian dari perjalanan ini.
+        </p>
+    </div>
+
+    <div class="signature">
+        Hormat saya,<br><br>
+        (Keren Hapukh K.c)
+    </div>
+</div>
+
+</body>
+</html>
